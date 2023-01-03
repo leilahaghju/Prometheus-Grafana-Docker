@@ -39,16 +39,6 @@ groups:
       summary: "Server storage is almost full"
       description: "Docker host storage usage is {{ humanize $value}}%. Reported by instance {{ $labels.instance }} of job {{ $labels.job }}."
 
-- name: containers
-  rules:
-  - alert: fandoo_down
-    expr: absent(container_memory_usage_bytes{name="fandoo-web-app"})
-    for: 30s
-    labels:
-      severity: critical
-    annotations:
-      summary: "Fandoo down"
-      description: "fandoo-web-app container is down for more than 30 seconds."
 
 #- name: containers
 #  rules:
