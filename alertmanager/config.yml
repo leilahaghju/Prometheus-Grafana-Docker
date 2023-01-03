@@ -6,9 +6,9 @@ route:
 receivers:
 - name: email-me
   email_configs:
-    - to: 'esmaeelsiaahlooie@gmail.com'
-      from: 'esmaeelsiaahlooie@gmail.com'
+    - to: 'sample@gmail.com'
+      from: 'sample@gmail.com'
       smarthost: smtp.gmail.com:587
-      auth_username: 'esmaeelsiaahlooie@gmail.com'
-      auth_identity: 'esmaeelsiaahlooie'
-      auth_password: 'xnjjqoihlbrljpwh'
+      auth_username: 'sample@gmail.com'
+      auth_identity: 'username'
+      auth_password: 'password'
